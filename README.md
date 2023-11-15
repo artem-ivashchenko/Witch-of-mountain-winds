@@ -1,6 +1,11 @@
 Witch of mountain winds is a landing page for natural body care with nature-inspired visuals and a clean and inviting design.
 
-Stack: HTML, CSS, SCSS, BEM, Javascript
+Stack: 
+- HTML
+- CSS
+- SCSS
+- BEM
+- Javascript
 
 Preview: https://artem-ivashchenko.github.io/Witch-of-mountain-winds/
 
