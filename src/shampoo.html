@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shampoo</title>
-    <link rel="icon" href="./images/icons/Eco-logo-small.svg">
+    <link rel="icon" href="./images/icons/Eco-logo-small.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -17,9 +17,15 @@
     <header class="page__section--small">
       <div class="container">
         <nav class="top-actions">
-          <a href="index.html" class="top-actions__icon top-actions__icon--logo-big icon"></a>
+          <a
+            href="index.html"
+            class="top-actions__icon top-actions__icon--logo-big icon"
+          ></a>
 
-          <a href="#" class="top-actions__icon top-actions__icon--menu icon"></a>
+          <a
+            href="#"
+            class="top-actions__icon top-actions__icon--menu icon"
+          ></a>
 
           <a
             href="index.html"
@@ -29,21 +35,34 @@
           <div class="top-actions__right">
             <ul class="top-actions__nav">
               <li>
-                <a class="top-actions__link text-input-menu scroll" href="index.html#shop">
+                <a
+                  class="top-actions__link text-input-menu scroll"
+                  href="index.html#shop"
+                >
                   Shop
                 </a>
               </li>
               <li>
-                <a class="top-actions__link text-input-menu scroll" href="index.html#contact">
+                <a
+                  class="top-actions__link text-input-menu scroll"
+                  href="index.html#contact"
+                >
                   Contact
                 </a>
               </li>
               <li>
-                <a class="top-actions__link text-input-menu scroll" href="index.html#about">About</a>
+                <a
+                  class="top-actions__link text-input-menu scroll"
+                  href="index.html#about"
+                  >About</a
+                >
               </li>
             </ul>
 
-            <a href="#" class="top-actions__icon top-actions__icon--shop icon"></a>
+            <a
+              href="#"
+              class="top-actions__icon top-actions__icon--shop icon"
+            ></a>
           </div>
         </nav>
       </div>
@@ -76,8 +95,11 @@
         <div class="container">
           <div class="product__content">
             <div
-              class="product__image product__image--desktop product__image--hair-2"
-            ></div>
+              class="product__image product__image--desktop lazy-load"
+              style="background-image: url(images/blur/hair-2-blur.png)"
+            >
+              <img src="images/hair-2.jpg" alt="Shampoo" loading="lazy" />
+            </div>
 
             <div class="product__hero">
               <div class="product__info">
@@ -89,7 +111,13 @@
                   </p>
                 </div>
               </div>
-              <div class="product__image product__image--hair-2"></div>
+
+              <div
+                class="product__image lazy-load"
+                style="background-image: url(images/blur/hair-2-blur.png)"
+              >
+                <img src="images/hair-2.jpg" alt="Shampoo" loading="lazy" />
+              </div>
 
               <div class="product__button-box">
                 <button class="button">add to bag</button>
@@ -118,37 +146,52 @@
         <div class="footer__content">
           <ul class="footer__links">
             <li>
-              <a class="footer__link text-input-menu" href="index.html#shop">Shop</a>
+              <a class="footer__link text-input-menu" href="index.html#shop"
+                >Shop</a
+              >
             </li>
             <li>
-              <a class="footer__link text-input-menu" href="index.html#contact" >Contact</a>
+              <a class="footer__link text-input-menu" href="index.html#contact"
+                >Contact</a
+              >
             </li>
             <li>
-              <a class="footer__link text-input-menu" href="index.html#about">About</a>
+              <a class="footer__link text-input-menu" href="index.html#about"
+                >About</a
+              >
             </li>
           </ul>
 
           <div class="footer__icons">
             <a href="https://facebook.com/" target="_blank">
-              <div class="footer__icon footer__icon--facebook icon icon--beige"></div>
+              <div
+                class="footer__icon footer__icon--facebook icon icon--beige"
+              ></div>
             </a>
 
             <a href="https://www.instagram.com/" target="_blank">
-              <div class="footer__icon footer__icon--inst icon icon--beige"></div>
+              <div
+                class="footer__icon footer__icon--inst icon icon--beige"
+              ></div>
             </a>
           </div>
 
           <div class="footer__info">
             <div class="footer__info-link-box">
-              <a href="https://www.google.com/maps/place/%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0/@47.8497349,20.6225333,5z/data=!3m1!4b1!4m6!3m5!1s0x40d1d9c154700e8f:0x1068488f64010!8m2!3d48.379433!4d31.1655799!16zL20vMDd0MjE?hl=ru&entry=ttu"    class="footer__info-link"
-              target="_blank"
+              <a
+                href="https://www.google.com/maps/place/%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0/@47.8497349,20.6225333,5z/data=!3m1!4b1!4m6!3m5!1s0x40d1d9c154700e8f:0x1068488f64010!8m2!3d48.379433!4d31.1655799!16zL20vMDd0MjE?hl=ru&entry=ttu"
+                class="footer__info-link"
+                target="_blank"
               >
                 Ukraine
               </a>
             </div>
 
             <div class="footer__info-link-box">
-              <a href="mailto:support.mountain@gmail.com" class="footer__info-link">
+              <a
+                href="mailto:support.mountain@gmail.com"
+                class="footer__info-link"
+              >
                 support.mountain@gmail.com
               </a>
             </div>
@@ -166,9 +209,7 @@
             </div>
           </div>
 
-          <p class="footer__copyright">
-            © 2023 witch of mountain winds
-          </p>
+          <p class="footer__copyright">© 2023 witch of mountain winds</p>
         </div>
       </div>
     </footer>

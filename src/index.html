@@ -62,11 +62,26 @@
 
     <main class="page__main">
       <section class="hero page__section" data-animate-class="hero">
-        <div class="hero__image hero__image--mobile" data-animate-class="hero__image"></div>
+        <div
+          class="hero__image hero__image--mobile lazy-load"
+          data-animate-class="hero__image"
+          style="background-image: url(images/blur/hero-blur.png);"
+        >
+          <img src="images/hero-mobile.png" alt="hero">
+        </div>
 
         <div class="container">
           <div class="hero__content">
-            <div class="hero__image" data-animate-class="hero__image"></div>
+            <div
+              class="hero__image lazy-load"
+              data-animate-class="hero__image"
+              style="background-image: url(images/blur/hero-blur.png);"
+            >
+              <picture>
+                <source media="(min-width: 1280px)" srcset="images/hero-desktop.png">
+                <img src="images/hero-tablet.png" alt="hero" loading="lazy">
+              </picture>
+            </div>
 
             <div class="hero__info" data-animate-class="hero__info">
               <h1 class="title-main hero__title">
@@ -132,8 +147,22 @@
               </a>
             </div>
 
-            <div class="brand__photo brand__photo--big"></div>
-            <div class="brand__photo brand__photo--small"></div>
+            <div
+              class="brand__photo brand__photo--big lazy-load"
+              style="background-image: url(images/blur/about-big-blur.png);"
+            >
+              <picture>
+                <source media="(min-width: 1280px)" srcset="images/about-big-desktop.png">
+                <img src="images/about-big-tablet.png" alt="about" loading="lazy">
+              </picture>
+            </div>
+
+            <div
+              class="brand__photo brand__photo--small lazy-load"
+              style="background-image: url(images/blur/about-big-blur.png);"
+            >
+              <img src="images/about-small.png" alt="about" loading="lazy">
+            </div>
           </div>
         </div>
       </section>
@@ -167,7 +196,17 @@
               <div class="shop__products">
                 <div class="shop__product" data-category="face" data-active>
                   <div class="shop__image-wrapper">
-                    <a href="hydrophilic-oil.html" class="shop__image shop__image--face-1"></a>
+                    <a
+                      href="hydrophilic-oil.html"
+                      class="shop__image lazy-load"
+                      style="background-image: url(images/blur/shop-face-1-blur.png);"
+                    >
+                      <picture>
+                        <source media="(max-width: 640px)" srcset="images/shop-face-1-tablet.png">
+                        <source media="(min-width: 1280px)" srcset="images/shop-face-1-desktop.png">
+                        <img src="images/shop-face-1-mobile.png" alt="oil" loading="lazy">
+                      </picture>
+                    </a>
                   </div>
                   <a href="hydrophilic-oil.html" class="shop__product-name">Hydrophilic oil</a>
                   <p class="shop__product-price">160 UAH</p>
@@ -175,7 +214,17 @@
 
                 <div class="shop__product" data-category="face">
                   <div class="shop__image-wrapper">
-                    <a href="ubtan.html" class="shop__image shop__image--face-2"></a>
+                    <a
+                      href="ubtan.html"
+                      class="shop__image lazy-load"
+                      style="background-image: url(images/blur/shop-face-2-blur.png);"
+                    >
+                      <picture>
+                        <source media="(max-width: 640px)" srcset="images/shop-face-2-tablet.png">
+                        <source media="(min-width: 1280px)" srcset="images/shop-face-2-desktop.png">
+                        <img src="images/shop-face-2-mobile.png" alt="ubtan" loading="lazy">
+                      </picture>
+                    </a>
                   </div>
                   <a href="ubtan.html" class="shop__product-name">Ubtan</a>
                   <p class="shop__product-price">180 UAH</p>
@@ -183,7 +232,13 @@
 
                 <div class="shop__product" data-category="body">
                   <div class="shop__image-wrapper">
-                    <a href="body-soap.html" class="shop__image shop__image--body-1"></a>
+                    <a
+                      href="body-soap.html"
+                      class="shop__image lazy-load"
+                      style="background-image: url(images/blur/body-1-blur.png);"
+                    >
+                      <img src="images/body-1.jpg" alt="body soap" loading="lazy">
+                    </a>
                   </div>
                   <a href="body-soap.html" class="shop__product-name">Body soap</a>
                   <p class="shop__product-price">120 UAH</p>
@@ -191,7 +246,13 @@
 
                 <div class="shop__product" data-category="body">
                   <div class="shop__image-wrapper">
-                    <a href="body-kit.html" class="shop__image shop__image--body-2"></a>
+                    <a
+                      href="body-kit.html"
+                      class="shop__image lazy-load"
+                      style="background-image: url(images/blur/body-2-blur.png);"
+                    >
+                      <img src="images/body-2.jpg" alt="body kit" loading="lazy">
+                    </a>
                   </div>
                   <a href="body-kit.html" class="shop__product-name">Body kit</a>
                   <p class="shop__product-price">340 UAH</p>
@@ -199,7 +260,13 @@
 
                 <div class="shop__product" data-category="hair">
                   <div class="shop__image-wrapper">
-                    <a href="conditioner.html" class="shop__image shop__image--hair-1"></a>
+                    <a
+                      href="conditioner.html"
+                      class="shop__image lazy-load"
+                      style="background-image: url(images/blur/hair-1-blur.png);"
+                    >
+                      <img src="images/hair-1.jpg" alt="conditioner" loading="lazy">
+                    </a>
                   </div>
                   <a href="conditioner.html" class="shop__product-name">Conditioner</a>
                   <p class="shop__product-price">150 UAH</p>
@@ -207,7 +274,13 @@
 
                 <div class="shop__product" data-category="hair">
                   <div class="shop__image-wrapper">
-                    <a href="shampoo.html" class="shop__image shop__image--hair-2"></a>
+                    <a
+                      href="shampoo.html"
+                      class="shop__image lazy-load"
+                      style="background-image: url(images/blur/hair-2-blur.png);"
+                    >
+                      <img src="images/hair-2.jpg" alt="shampoo" loading="lazy">
+                    </a>
                   </div>
                   <a href="shampoo.html" class="shop__product-name">Shampoo</a>
                   <p class="shop__product-price">180 UAH</p>
@@ -215,7 +288,13 @@
 
                 <div class="shop__product" data-category="candles">
                   <div class="shop__image-wrapper">
-                    <a href="beeswax-candle.html" class="shop__image shop__image--candle-1"></a>
+                    <a
+                      href="beeswax-candle.html"
+                      class="shop__image lazy-load"
+                      style="background-image: url(images/blur/candles-1-blur.png);"
+                    >
+                      <img src="images/candles-1.jpg" alt="Beeswax Candle" loading="lazy">
+                    </a>
                   </div>
                   <a href="beeswax-candle.html" class="shop__product-name">Beeswax Candle</a>
                   <p class="shop__product-price">240 UAH</p>
@@ -223,7 +302,13 @@
 
                 <div class="shop__product" data-category="candles">
                   <div class="shop__image-wrapper">
-                    <a href="wood-wick-candle.html" class="shop__image shop__image--candle-2"></a>
+                    <a
+                      href="wood-wick-candle.html"
+                      class="shop__image lazy-load"
+                      style="background-image: url(images/blur/candles-2-blur.png);"
+                    >
+                      <img src="images/candles-2.jpg" alt="Wood Wick Candle" loading="lazy">
+                    </a>
                   </div>
                   <a href="wood-wick-candle.html" class="shop__product-name">Wood Wick Candle</a>
                   <p class="shop__product-price">220 UAH</p>
@@ -278,7 +363,15 @@
               </div>
             </div>
 
-            <div class="creators__photo"></div>
+            <div
+              class="creators__photo lazy-load"
+              style="background-image: url(images/blur/creators-blur.png);"
+            >
+              <picture>
+                <source media="(min-width: 1280px)" srcset="images/creators-desktop.png">
+                <img src="images/creators-tablet.png" alt="creators" loading="lazy">
+              </picture>
+            </div>
           </div>
         </div>
       </section>
@@ -483,7 +576,15 @@
               </form>
             </div>
 
-            <div class="contact__photo"></div>
+            <div
+              class="contact__photo lazy-load"
+              style="background-image: url(images/blur/contact-blur.png);"
+            >
+              <picture>
+                <source media="(min-width: 1280px)" srcset="images/contact-desktop.png">
+                <img src="images/contact-tablet.png" alt="contact" loading="lazy">
+              </picture>
+            </div>
           </div>
         </div>
       </section>

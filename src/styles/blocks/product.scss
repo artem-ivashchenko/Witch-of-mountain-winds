@@ -90,9 +90,6 @@
 
   &__image {
     display: block;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     aspect-ratio: 1/1;
@@ -106,6 +103,7 @@
 
     @include onTablet {
       order: 1;
+      max-height: 400px;
     }
 
     @include onDesktop {
@@ -118,54 +116,6 @@
         margin-bottom: 0;
         max-height: 500px;
       }
-    }
-
-    &--face-1 {
-      background-image: url(../images/shop-face-1-mobile.png);
-
-      @include onTablet {
-        background-image: url(../images/shop-face-1-tablet.png);
-      }
-
-      @include onDesktop {
-        background-image: url(../images/shop-face-1-desktop.png);
-      }
-    }
-
-    &--face-2 {
-      background-image: url(../images/shop-face-2-mobile.png);
-
-      @include onTablet {
-        background-image: url(../images/shop-face-2-tablet.png);
-      }
-
-      @include onDesktop {
-        background-image: url(../images/shop-face-2-desktop.png);
-      }
-    }
-
-    &--body-1 {
-      background-image: url(../images/body-1.jpg);
-    }
-
-    &--body-2 {
-      background-image: url(../images/body-2.jpg);
-    }
-
-    &--hair-1 {
-      background-image: url(../images/hair-1.jpg);
-    }
-
-    &--hair-2 {
-      background-image: url(../images/hair-2.jpg);
-    }
-
-    &--candle-1 {
-      background-image: url(../images/candles-1.jpg);
-    }
-
-    &--candle-2 {
-      background-image: url(../images/candles-2.jpg);
     }
   }
 

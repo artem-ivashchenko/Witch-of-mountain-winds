@@ -79,7 +79,7 @@
     color: $c-dark;
     text-transform: uppercase;
     transition: $transition;
-    
+
     &:hover {
       color: $c-olive;
     }
@@ -123,30 +123,6 @@
     }
     @include onTablet {
       max-height: 450px;
-    }
-
-    &--face-1 {
-      background-image: url(../images/shop-face-1-mobile.png);
-
-      @include onTablet {
-        background-image: url(../images/shop-face-1-tablet.png);
-      }
-
-      @include onDesktop {
-        background-image: url(../images/shop-face-1-desktop.png);
-      }
-    }
-
-    &--face-2 {
-      background-image: url(../images/shop-face-2-mobile.png);
-
-      @include onTablet {
-        background-image: url(../images/shop-face-2-tablet.png);
-      }
-
-      @include onDesktop {
-        background-image: url(../images/shop-face-2-desktop.png);
-      }
     }
 
     &--body-1 {

@@ -73,20 +73,14 @@
     width: 100%;
     aspect-ratio: 1.2/1;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
     @include onTablet {
       display: block;
       max-height: 500px;
-      background-image: url(../images/hero-tablet.png);
     }
 
     @include onDesktop {
       grid-column: 7/-1;
       max-height: 450px;
-      background-image: url(../images/hero-desktop.png);
 
       transform: translateX(20%);
       opacity: 0;
@@ -100,7 +94,6 @@
     &--mobile {
       display: block;
       margin-bottom: 25px;
-      background-image: url(../images/hero-mobile.png);
 
       @include onTablet {
         display: none;

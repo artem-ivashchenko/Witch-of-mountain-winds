@@ -75,12 +75,10 @@
         display: block;
         grid-column: span 3;
         aspect-ratio: 1.3/1;
-        background-image: url(../images/about-big-tablet.png);
       }
 
       @include onDesktop {
         grid-column: 7/11;
-        background-image: url(../images/about-big-desktop.png);
       }
     }
 
@@ -92,7 +90,6 @@
         display: block;
         grid-column: 11/-1;
         align-self: flex-end;
-        background-image: url(../images/about-small.png);
       }
     }
   }

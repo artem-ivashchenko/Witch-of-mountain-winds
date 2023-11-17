@@ -94,12 +94,10 @@
     @include onTablet {
       display: block;
       grid-column: span 3;
-      background-image: url(../images/creators-tablet.png);
     }
 
     @include onDesktop {
       grid-column: 7/-1;
-      background-image: url(../images/creators-desktop.png);
     }
   }
 }

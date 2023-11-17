@@ -146,7 +146,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.5,
+    threshold: 0.3,
   }
 );
 
@@ -199,5 +199,21 @@ powderArrow.forEach(item => {
 heroImage.forEach(item => {
   if (item) {
     observer.observe(item);
+  }
+});
+
+const blurDivs = document.querySelectorAll('.lazy-load');
+
+blurDivs.forEach(div => {
+  const img = div.querySelector('img');
+
+  function loaded() {
+    div.classList.add('lazy-load--loaded');
+  }
+
+  if (img.complete) {
+    loaded();
+  } else {
+    img.addEventListener('load', loaded);
   }
 });
